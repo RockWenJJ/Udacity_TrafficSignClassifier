@@ -5,13 +5,13 @@
 
 The data sets are located in the folder `data`. Training data consists of 34799 examples, validation data 4410 and test data 12630. Input image is a 32x32x3 RGB image. There are 43 different types of traffic signs. The distribution of each set is illustrated as below.
 
-[Distribution](./examples/DataDistribution.png)
+![Distribution](./examples/DataDistribution.png)
 
 2. **Pre-process the input image**
 
 All the input data is normalized with `(pixel - 128) / 128`. The training data has been rearanged randomly by the function `permutate()`, which can be found in Cell 4 of `Traffic_Sign_Classifier.ipynb`. In addition, Gaussian noise is applied to prevent overfitting during training. The function is `addGaussianNoise()` in Cell 4 of `Traffic_Sign_Classifier.ipynb`. The comparison between original input image and the one with Gaussian noise is shown below.
 
-[origVsNoise](./examples/origVsNoised.png)
+![origVsNoise](./examples/origVsNoised.png)
 
 3. **Design, train and test a model architecture**
 
@@ -33,8 +33,6 @@ The network consists of four convolutional layers followed with max-pooling laye
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 2x2x32 				    |
 | Fully connected		|outputs 43 classes                             |
-|						|												|
-|						|												|
 
 My final model results were:
 * training set loss of 3.3e-3, accuracy of 99.986%
@@ -45,7 +43,7 @@ My final model results were:
 
 The model was tested with 6 new images from the internet. The result is shown below.
 
-[testResult.png](./examples/testResult.png)
+![testResult.png](./examples/testResult.png)
 
 The predicted accuracy for the 6 new images is 100%. And the top 5 predictions for each image is:
 ```
