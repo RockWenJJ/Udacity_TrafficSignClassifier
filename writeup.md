@@ -73,6 +73,7 @@ The model was tested with 6 new images from the internet. The predicted accuracy
 
 **Images Description**
 Most of the new images are of good quality. The brightness and contrast is Some of them have a low  brightness and some even jitters), the model have made the right prediction.
+
 | Index  | True/Predicted | Brightness | Contrast |Easy/Difficult | Other  |
 |:------:|:--------------:|:----------:|:--------:|:----------:|:------:|
 |0       |10/10           | low        | low      | difficult  |        |
